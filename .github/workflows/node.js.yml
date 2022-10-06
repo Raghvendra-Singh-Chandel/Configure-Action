@@ -1,0 +1,28 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+ 
+jobs:
+  Cypress-Run:
+
+    runs-on: ubuntu-latest
+    
+    container: cypress/browser:node14.17.0-chrome88-ff89
+    
+
+    
+
+    steps:
+    - name: Checkout 
+      uses: actions/checkout@v3.1.0
+   
+    - name: Cypress run
+      uses: cypress-io/github-action@v4.2.0
+      with:
+        command: cy_run_on_chrome
+        
