@@ -20,6 +20,6 @@ jobs:
     - name: cypress run 
       uses: cypress-io/github-action@v4.2.0
       with:
-          command: cy_run_on_chrome
+          command: npx cypress run --browser chrome
           record: true
         
