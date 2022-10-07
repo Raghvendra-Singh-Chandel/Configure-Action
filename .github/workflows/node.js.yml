@@ -22,4 +22,3 @@ jobs:
       with:
           command: npx cypress run --browser chrome
           record: true
-        
