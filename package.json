@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy_run_on_chrome":"npx cypress open --browser chrome"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^10.9.0"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
   }
 }
